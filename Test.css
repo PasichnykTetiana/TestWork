@@ -1,0 +1,35 @@
+#flex-container {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.title {
+  border: 1px solid black;
+  margin: 5px 5px 0 5px;
+}
+
+.content {
+  min-height: 10em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px 0 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  #flex-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .block {
+    margin: 10px;
+  }
+}
